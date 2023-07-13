@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  background-color: white;
+}
+
+#video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* ปรับสูงสุดเพื่อให้เต็มหน้าจอ */
+  overflow: hidden; /* ป้องกัน video ที่เต็มหน้าจอเกินขอบเขต */
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+#text-ol {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1; /* ย้าย header ไปอยู่ด้านบนของ video */
+}
+
+nav {
+  position: relative;
+  top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: none;
+  border-radius: 2px;
+  z-index: 1; /* ย้าย nav ไปอยู่ด้านบนของ video */
+}
+
+nav ul {
+  margin: 0;
+  display: flex;
+}
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 20px;
+  font-weight: 600;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  transition: all .5s;
+  background-color: rgba(150, 150, 150, .3);
+  color: rgb(255, 255, 255);
+  border-radius: 2px;
+}
+
+.BN {
+  font-size: 30px;
+  font-weight: 700;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+}
+
+.BN a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Navbar styles for desktop */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+/* Navbar styles for mobile devices */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+}

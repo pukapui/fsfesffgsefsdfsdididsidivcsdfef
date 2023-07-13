@@ -1,0 +1,48 @@
+body {
+      /* สีข้อความ */
+  .title {
+    color: #333333;
+  }
+
+  /* สีเนื้อหา */
+  .content {
+    color: #ffffff;
+  }
+
+  /* สีตัวอักษรชื่อ */
+  .name {
+    color: #c5ffff;
+  }
+
+  /* สีตัวอักษรจังหวัด */
+  .province {
+    color: #ff9575;
+  }
+
+  /* สีตัวอักษรคำว่า "software developer" */
+  .profession {
+    color: #ffcdba;
+  }
+
+  /* สีตัวอักษรข้อความสุดท้าย */
+  .dreams {
+    color: #b5b5ff;
+  }
+  .iama {
+    color: rgb(140, 255, 159);
+  }
+  .number {
+    color: aquamarine;
+  }
+
+  .outl {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+  }
+}

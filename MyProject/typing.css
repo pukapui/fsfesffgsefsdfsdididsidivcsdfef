@@ -1,0 +1,20 @@
+/* typing.css */
+
+.content::after {
+  content: '|'; /* The cursor symbol */
+  display: inline-block;
+  margin-left: 3px; /* Adjust the margin as needed */
+  animation: cursor-animation 0.8s infinite;
+}
+
+@keyframes cursor-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
